@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ricardo Luís Bertolucci Filho - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Ricardo Luís Bertolucci Filho — Data Science & Mathematics</title>
+  <meta name="description" content="Portfolio of Ricardo Luís Bertolucci Filho: projects in Data Science, Machine Learning, and Applied Mathematics." />
+  <link rel="canonical" href="https://ric-rky.github.io/" />
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Ricardo Luís Bertolucci Filho — Data Science & Mathematics" />
+  <meta property="og:description" content="Projects in ML, Applied Statistics, and Mathematics." />
+  <meta property="og:url" content="https://ric-rky.github.io/" />
+  <meta property="og:type" content="website" />
+  <!-- Optional: add a preview image later -->
+  <!-- <meta property="og:image" content="https://ric-rky.github.io/og.png" /> -->
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ricardo Luís Bertolucci Filho — Data Science & Mathematics" />
+  <meta name="twitter:description" content="Projects in ML, Applied Statistics, and Mathematics." />
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Ricardo Luís Bertolucci Filho",
+    "jobTitle":"Data Scientist",
+    "alumniOf":"UNESP",
+    "sameAs":[
+      "https://github.com/ric-rky",
+      "https://www.linkedin.com/in/ricardo-bertolucci/"
+    ],
+    "url":"https://ric-rky.github.io/"
+  }
+  </script>
 </head>
 <body>
   <!-- Hero Section -->
@@ -17,33 +49,34 @@
       <h2>Mathematician | Data Scientist</h2>
       <p class="subtitle">Data Science • Machine Learning • Mathematics</p>
       <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary">View My Projects</a>
-        <a href="#contact" class="btn btn-secondary">Get in Touch!</a>
+        <a href="#projects" class="btn btn-primary" aria-label="Explore my work">Explore My Work</a>
+        <a href="#contact" class="btn btn-secondary" aria-label="Get in touch">Get in Touch</a>
       </div>
     </div>
     <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
-      <a href="#about"><i class="fas fa-chevron-down"></i></a>
+      <a href="#about" aria-label="Scroll to About"><i class="fas fa-chevron-down"></i></a>
     </div>
   </header>
 
   <main class="container">
-    <!-- About Section -->
+    <!-- About Section (dark) -->
     <section id="about" class="about-section" data-aos="fade-up">
       <h2>About Me</h2>
       <div class="about-content">
         <p>
-          I hold a <strong>Master's degree in Mathematics</strong> with a specialization in <strong>Functional Analysis and Operator Theory</strong>. 
-          Currently working as a <strong>Data Scientist</strong>, combining rigorous mathematical theory with practical data-driven solutions.
+          I hold a <strong>Master's degree in Mathematics</strong> with a specialization in
+          <strong>Functional Analysis and Operator Theory</strong>. I work as a <strong>Data Scientist</strong>,
+          combining rigorous mathematical theory with practical, data-driven solutions.
         </p>
         <p>
-          This portfolio showcases my featured projects and explores the fascinating intersection of <strong>mathematics</strong>, 
-          <strong>data science</strong>, and <strong>programming</strong>. I'm passionate about solving complex problems using 
-          mathematical concepts and cutting-edge machine learning techniques.
+          This portfolio showcases my featured projects and explores the intersection of
+          <strong>mathematics</strong>, <strong>data science</strong>, and <strong>programming</strong>.
+          I enjoy solving complex problems with principled modeling and modern machine learning techniques.
         </p>
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section (purple) -->
     <section class="skills-section" data-aos="fade-up">
       <h2>Skills & Expertise</h2>
       <div class="skills-grid">
@@ -82,95 +115,119 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section (dark) -->
     <section id="projects" class="projects-section" data-aos="fade-up">
       <h2>Featured Projects</h2>
-      <p class="section-description">Explore my latest work in data science, mathematics, and programming</p>
+      <p class="section-description">Problem → Approach → Result</p>
+
       <div class="projects-grid">
+        <!-- Project 1 -->
         <div class="project-card" data-aos="flip-left" data-aos-delay="100">
-          <div class="project-icon">
-            <i class="fas fa-project-diagram"></i>
-          </div>
-          <h3>Project Coming Soon</h3>
-          <p>Exciting projects in machine learning and data analysis will be featured here soon.</p>
+          <div class="project-icon"><i class="fas fa-project-diagram"></i></div>
+          <h3>Churn Prediction for Education Payments</h3>
+          <p>
+            <strong>Problem:</strong> estimate likelihood of payment after collection actions.<br/>
+            <strong>Approach:</strong> action-level dataset, temporal features, Logistic Regression → XGBoost, temporal validation, SHAP explainability.<br/>
+            <strong>Result:</strong>
+            <span class="metrics-badge">AUC 0.81</span>
+            <span class="metrics-badge">Recall@Top 0.72</span>
+            ~12% expected cost reduction.
+          </p>
           <div class="project-tags">
-            <span>Python</span>
-            <span>ML</span>
+            <span>Python</span><span>scikit-learn</span><span>SHAP</span>
           </div>
-          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          <a href="https://github.com/SEU_REPO_CHURN" target="_blank" rel="noopener noreferrer" class="project-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
+
+        <!-- Project 2 -->
         <div class="project-card" data-aos="flip-left" data-aos-delay="200">
-          <div class="project-icon">
-            <i class="fas fa-brain"></i>
-          </div>
-          <h3>Project Coming Soon</h3>
-          <p>Deep learning applications and neural network implementations.</p>
+          <div class="project-icon"><i class="fas fa-city"></i></div>
+          <h3>Rental Price Prediction — São Paulo</h3>
+          <p>
+            <strong>Problem:</strong> rental price estimation in São Paulo.<br/>
+            <strong>Approach:</strong> log-transform (<code>log_rent</code>), VIF, model assumptions validation; linear + tree models.<br/>
+            <strong>Result:</strong>
+            <span class="metrics-badge">R² 0.85</span>
+            <span class="metrics-badge">RMSE ≈ R$120</span>
+            (~3% of price).
+          </p>
           <div class="project-tags">
-            <span>Deep Learning</span>
-            <span>TensorFlow</span>
+            <span>Pandas</span><span>Statsmodels</span><span>Regression</span>
           </div>
-          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          <a href="https://github.com/SEU_REPO_RENT" target="_blank" rel="noopener noreferrer" class="project-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
+
+        <!-- Project 3 -->
         <div class="project-card" data-aos="flip-left" data-aos-delay="300">
-          <div class="project-icon">
-            <i class="fas fa-calculator"></i>
-          </div>
-          <h3>Project Coming Soon</h3>
-          <p>Mathematical modeling and theoretical research applications.</p>
+          <div class="project-icon"><i class="fas fa-wine-bottle"></i></div>
+          <h3>Wine Quality Classification</h3>
+          <p>
+            <strong>Problem:</strong> quality classification from physicochemical features.<br/>
+            <strong>Approach:</strong> pipelines with cross-validation, hyperparameter tuning, class-level metrics, SHAP; MLflow tracking.<br/>
+            <strong>Result:</strong>
+            <span class="metrics-badge">F1-macro 0.71</span>
+            full reproducibility with MLflow.
+          </p>
           <div class="project-tags">
-            <span>Mathematics</span>
-            <span>Research</span>
+            <span>Python</span><span>MLflow</span><span>Classification</span>
           </div>
-          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+          <a href="https://github.com/SEU_REPO_WINE" target="_blank" rel="noopener noreferrer" class="project-link">
+            View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Learning & Certifications Section -->
+    <!-- Learning & Certifications (purple) -->
     <section id="learning" class="learning-section" data-aos="fade-up">
       <h2>Learning & Certifications</h2>
       <div class="learning-grid">
         <div class="learning-item" data-aos="fade-right">
-          <div class="learning-icon">
-            <i class="fas fa-language"></i>
-          </div>
+          <div class="learning-icon"><i class="fas fa-language"></i></div>
           <h3>Languages</h3>
-          <p><strong>English:</strong> Fluent</p>
+          <p><strong>English:</strong> Advanced</p>
           <p><strong>Portuguese:</strong> Native</p>
         </div>
+
         <div class="learning-item" data-aos="fade-up">
-          <div class="learning-icon">
-            <i class="fas fa-certificate"></i>
-          </div>
+          <div class="learning-icon"><i class="fas fa-certificate"></i></div>
           <h3>Certifications</h3>
           <p>Google Data Analytics</p>
           <p>AWS Cloud Practitioner</p>
         </div>
+
         <div class="learning-item" data-aos="fade-left">
-          <div class="learning-icon">
-            <i class="fas fa-book-open"></i>
-          </div>
+          <div class="learning-icon"><i class="fas fa-book-open"></i></div>
           <h3>Currently Studying</h3>
-          <p>Hands-On Machine Learning <span class="book-author">(Aurélien Géron)</span></p>
-          <p>An Introduction to Statistical Learning <span class="book-author">(ISLR)</span></p>
+          <p>Hands-On Machine Learning (Aurélien Géron)</p>
+          <p>An Introduction to Statistical Learning (ISLR/ISLP)</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact (purple for emphasis) -->
     <section id="contact" class="contact-section" data-aos="fade-up">
-      <h2>Let's Connect</h2>
-      <p class="section-description">Feel free to reach out for collaborations or just to say hi!</p>
+      <h2>Contact</h2>
+      <p class="section-description">Reach out for collaborations, opportunities, or questions.</p>
       <div class="contact-links">
-        <a href="https://github.com/ric-rky" target="_blank" class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+        <a href="https://github.com/ric-rky" target="_blank" rel="noopener noreferrer" class="contact-card" data-aos="zoom-in" data-aos-delay="100">
           <i class="fab fa-github"></i>
           <h3>GitHub</h3>
           <p>@ric-rky</p>
         </a>
-        <a href="https://www.linkedin.com/in/ricardo-luís-bertolucci-filho/" target="_blank" class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+        <a href="https://www.linkedin.com/in/ricardo-bertolucci/" target="_blank" rel="noopener noreferrer" class="contact-card" data-aos="zoom-in" data-aos-delay="200">
           <i class="fab fa-linkedin"></i>
           <h3>LinkedIn</h3>
           <p>Ricardo Luís Bertolucci Filho</p>
+        </a>
+        <a href="mailto:ricardo.seuemail+portfolio@gmail.com" class="contact-card" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          <p>ricardo.seuemail+portfolio@gmail.com</p>
         </a>
       </div>
     </section>
@@ -183,10 +240,12 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    // Respect users who prefer reduced motion
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     AOS.init({
-      duration: 1000,
+      duration: prefersReduced ? 0 : 1000,
       once: true,
-      offset: 100
+      offset: prefersReduced ? 0 : 100
     });
   </script>
 </body>
