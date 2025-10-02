@@ -348,6 +348,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  width: 100%;
 }
 
 .learning-item {
@@ -357,6 +358,10 @@ h2 {
   text-align: center;
   transition: all 0.3s ease;
   border: 1px solid rgba(139,24,116,0.25);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .learning-item:hover {
