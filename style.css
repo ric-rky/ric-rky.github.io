@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root {
   --bg-primary: #1a0520;
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background: linear-gradient(to bottom, #1a0520 0%, #0f0318 30%, #000000 70%);
   color: var(--text-primary);
   line-height: 1.7;
@@ -67,20 +67,25 @@ body {
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
   margin-bottom: 15px;
   background: linear-gradient(135deg, #ffffff 0%, #fae8ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .hero h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
   color: #f0abfc;
   margin-bottom: 10px;
+  letter-spacing: 0.01em;
 }
 
 .subtitle {
@@ -88,6 +93,8 @@ body {
   color: #fae8ff;
   margin-bottom: 35px;
   font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+  letter-spacing: 0.05em;
 }
 
 .hero-buttons {
@@ -99,12 +106,16 @@ body {
 
 .btn {
   display: inline-block;
-  padding: 14px 35px;
+  padding: 16px 40px;
   background: var(--accent-gradient);
   color: white;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   transition: all 0.3s ease;
   box-shadow: 0 10px 30px rgba(217,70,239,0.4);
 }
@@ -146,20 +157,27 @@ section {
 }
 
 h2 {
+  font-family: 'Outfit', sans-serif;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 800;
   margin-bottom: 50px;
   background: var(--accent-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .section-description {
+  font-family: 'Space Grotesk', sans-serif;
   text-align: center;
   color: var(--text-secondary);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   margin-bottom: 40px;
+  letter-spacing: 0.01em;
 }
 
 /* About Section - Começando a escurecer */
@@ -170,17 +188,20 @@ h2 {
 }
 
 .about-content p {
-  font-size: 1.15rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: var(--text-secondary);
   max-width: 800px;
   margin: 0 auto 25px;
   text-align: center;
-  line-height: 1.8;
+  line-height: 1.9;
+  letter-spacing: 0.01em;
 }
 
 .about-content strong {
   color: var(--accent-primary);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Skills Section */
@@ -205,12 +226,16 @@ h2 {
 }
 
 .skill-category h3 {
-  font-size: 1.3rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin-bottom: 20px;
   color: var(--accent-primary);
   display: flex;
   align-items: center;
   gap: 10px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .skills {
@@ -220,14 +245,16 @@ h2 {
 }
 
 .skills span {
+  font-family: 'Space Grotesk', sans-serif;
   background: rgba(162, 28, 175, 0.4);
-  padding: 8px 16px;
+  padding: 10px 18px;
   border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: var(--text-primary);
   transition: all 0.3s ease;
   border: 1px solid rgba(217,70,239,0.3);
+  letter-spacing: 0.02em;
 }
 
 .skills span:hover {
@@ -290,15 +317,20 @@ h2 {
 }
 
 .project-card h3 {
-  font-size: 1.4rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 15px;
   color: var(--text-primary);
+  letter-spacing: 0.01em;
 }
 
 .project-card p {
+  font-family: 'Space Grotesk', sans-serif;
   color: var(--text-secondary);
   margin-bottom: 20px;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 .project-tags {
@@ -309,21 +341,28 @@ h2 {
 }
 
 .project-tags span {
+  font-family: 'Space Grotesk', sans-serif;
   background: rgba(162, 28, 175, 0.4);
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: 15px;
   font-size: 0.85rem;
+  font-weight: 600;
   color: var(--text-secondary);
   transition: all 0.3s ease;
+  letter-spacing: 0.03em;
 }
 
 .project-link {
+  font-family: 'Outfit', sans-serif;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   color: var(--accent-primary);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   transition: all 0.3s ease;
 }
 
@@ -379,13 +418,19 @@ h2 {
 }
 
 .contact-card h3 {
-  font-size: 1.3rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 10px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .contact-card p {
+  font-family: 'Space Grotesk', sans-serif;
   color: var(--text-secondary);
+  font-weight: 500;
 }
 
 /* Footer - Totalmente Preto */
@@ -398,20 +443,26 @@ footer {
   border-top: 1px solid rgba(217,70,239,0.2);
 }
 
+footer p {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+}
+
 .footer-tagline {
   margin-top: 10px;
   font-style: italic;
   color: var(--text-muted);
+  font-weight: 400;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
   
   .hero h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
   .subtitle {
@@ -419,7 +470,7 @@ footer {
   }
   
   h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   
   .projects-grid {
