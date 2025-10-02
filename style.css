@@ -112,6 +112,18 @@ body {
   box-shadow: 0 15px 40px rgba(139,24,116,0.6);
 }
 
+/* Botão secundário coerente com o tema */
+.btn.btn-secondary{
+  background: transparent;
+  border: 1px solid rgba(184,59,149,0.45);
+  color: var(--text-primary);
+}
+.btn.btn-secondary:hover{
+  background: rgba(184,59,149,0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(139,24,116,0.35);
+}
+
 .scroll-indicator {
   position: absolute;
   bottom: 30px;
@@ -310,8 +322,9 @@ h2 {
   padding: 5px 12px;
   border-radius: 15px;
   font-size: 0.85rem;
-  color: #9a7a96;
+  color: #e9d8e8; /* contraste melhorado */
   transition: all 0.3s ease;
+  border: 1px solid rgba(184,59,149,0.35);
 }
 
 .project-link {
@@ -335,6 +348,17 @@ h2 {
 
 .project-link:hover i {
   transform: translateX(5px);
+}
+
+/* Metric badges (AUC, R², etc.) */
+.metrics-badge{
+  display:inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(119,240,192,.4);
+  background: rgba(119,240,192,.08);
+  font-size: 12px;
+  margin-right: 6px;
 }
 
 /* Learning & Certifications Section */
@@ -424,11 +448,13 @@ h2 {
   transition: all 0.3s ease;
   border: 1px solid rgba(139,24,116,0.2);
   min-width: 200px;
+  color: var(--text-primary);
 }
 
-.contact-card:hover {
+.contact-card:hover,
+.contact-card:focus-visible {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(139,24,116,0.3);
+  box-shadow: 0 20px 40px rgba(139,24,116,0.35);
   border-color: var(--accent-primary);
   background: rgba(30, 30, 30, 1);
 }
@@ -465,39 +491,35 @@ footer {
   color: #9a7a96;
 }
 
+/* Acessibilidade: foco visível */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible{
+  outline: 2px solid #d16bb4;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Respeitar usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce){
+  *{ animation: none !important; transition: none !important; }
+  .scroll-indicator a{ animation: none !important; }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  
-  .hero h2 {
-    font-size: 1.2rem;
-  }
-  
-  .subtitle {
-    font-size: 1rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
+  .hero { height: auto; min-height: 100svh; } /* melhora 100vh no mobile */
 
-  .learning-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  section {
-    margin: 60px 0;
-  }
+  .hero h1 { font-size: clamp(2rem, 6vw, 2.5rem); }
+  .hero h2 { font-size: 1.2rem; }
+  .subtitle { font-size: 1rem; }
+  h2 { font-size: 2rem; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .learning-grid { grid-template-columns: 1fr; }
+
+  section { margin: 60px 0; }
 
   .contact-links {
     flex-direction: column;
