@@ -1,192 +1,153 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <title>Ricardo Luís Bertolucci Filho — Data Science & Mathematics</title>
-  <meta name="description" content="Portfolio of Ricardo Luís Bertolucci Filho: projects in Data Science, Machine Learning, and Applied Mathematics." />
-  <link rel="canonical" href="https://ric-rky.github.io/" />
-
-  <!-- Social preview -->
-  <meta property="og:title" content="Ricardo Luís Bertolucci Filho — Data Science & Mathematics" />
-  <meta property="og:description" content="Projects in ML, Applied Statistics, and Mathematics." />
-  <meta property="og:url" content="https://ric-rky.github.io/" />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Ricardo Luís Bertolucci Filho — Data Science & Mathematics" />
-  <meta name="twitter:description" content="Projects in ML, Applied Statistics, and Mathematics." />
-
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="style.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="site-title">Ricardo Luís Bertolucci Filho</h1>
-      <nav aria-label="Primary">
-        <ul class="nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certs">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content" data-aos="zoom-in">
+      <h1>Ricardo Luís Bertolucci Filho</h1>
+      <h2>Master in Mathematics | Data Scientist</h2>
+      <p class="subtitle">Functional Analysis • Operator Theory • Machine Learning</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
     </div>
   </header>
 
-  <main id="main">
-    <!-- HERO (purple) -->
-    <section class="hero bg-purple">
-      <div class="container">
-        <p class="kicker">MSc in Mathematics • Data Scientist</p>
-        <h2>Mathematical rigor, data-driven solutions.</h2>
-        <p>Data Science • Machine Learning • Mathematics</p>
-        <div class="accent" aria-hidden="true"></div>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#projects">View My Projects</a>
-          <a class="btn btn-ghost" href="#contact">Get in Touch!</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT (black) -->
-    <section id="about" class="section bg-ink">
-      <div class="container narrow">
-        <h2>About Me</h2>
+  <main class="container">
+    <!-- About Section -->
+    <section id="about" class="about-section" data-aos="fade-up">
+      <h2>About Me</h2>
+      <div class="about-content">
         <p>
-          I hold a Master’s degree in Mathematics (Functional Analysis/Operator Theory) 
-          and work in Data Science by combining rigorous theory with applied and hand's on practice. 
-          My focus is on transforming real-world problems into measurable, 
-          explainable solutions.
+          I hold a <strong>Master's degree in Mathematics</strong> with a specialization in <strong>Functional Analysis and Operator Theory</strong>. 
+          Currently working as a <strong>Data Scientist</strong>, I combine rigorous mathematical theory with practical data-driven solutions.
+        </p>
+        <p>
+          This portfolio showcases my featured projects and explores the fascinating intersection of <strong>mathematics</strong>, 
+          <strong>data science</strong>, and <strong>programming</strong>. I'm passionate about solving complex problems using 
+          mathematical concepts and cutting-edge machine learning techniques.
         </p>
       </div>
     </section>
 
-    <!-- SKILLS (purple) -->
-    <section id="skills" class="section bg-purple">
-      <div class="container">
-        <h2>Skills & Expertise</h2>
-        <div class="accent" aria-hidden="true"></div>
-        <div class="skills-grid">
-          <article>
-            <h3>Programming</h3>
-            <ul class="tags">
-              <li>Python</li><li>R</li><li>SQL</li><li>Git</li><li>LaTeX</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Data Science</h3>
-            <ul class="tags">
-              <li>Machine Learning</li><li>Deep Learning</li>
-              <li>Statistics</li><li>Visualization</li><li>Predictive Modeling</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Mathematics</h3>
-            <ul class="tags">
-              <li>Functional Analysis</li><li>Operator Theory</li>
-              <li>Linear Algebra</li><li>Geometry</li><li>Optimization</li>
-            </ul>
-          </article>
+    <!-- Skills Section -->
+    <section class="skills-section" data-aos="fade-up">
+      <h2>Skills & Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-category" data-aos="fade-right">
+          <h3><i class="fas fa-code"></i> Programming</h3>
+          <div class="skills">
+            <span>Python</span>
+            <span>R</span>
+            <span>SQL</span>
+            <span>Git</span>
+            <span>LaTeX</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-up">
+          <h3><i class="fas fa-chart-line"></i> Data Science</h3>
+          <div class="skills">
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>Statistical Analysis</span>
+            <span>Data Visualization</span>
+            <span>Predictive Modeling</span>
+          </div>
+        </div>
+        <div class="skill-category" data-aos="fade-left">
+          <h3><i class="fas fa-square-root-alt"></i> Mathematics</h3>
+          <div class="skills">
+            <span>Functional Analysis</span>
+            <span>Operator Theory</span>
+            <span>Linear Algebra</span>
+            <span>Real Analysis</span>
+            <span>Optimization</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS (black) -->
-    <section id="projects" class="section bg-ink">
-      <div class="container">
-        <h2>Featured Projects</h2>
-        <p class="sub">Problem → Approach → Result</p>
-
-        <div class="card-grid">
-          <article class="card">
-            <header>
-              <h3>Churn Prediction for Education Payments</h3>
-              <a class="pill btn-link" href="https://github.com/YOUR_REPO_CHURN" target="_blank">GitHub</a>
-            </header>
-            <p>
-              <strong>Problem:</strong> Predict likelihood of payment after collection actions.<br/>
-              <strong>Approach:</strong> Action-level restructuring, temporal features, Logistic Regression → XGBoost, temporal validation, SHAP explainability.<br/>
-              <strong>Result:</strong> AUC 0.81; recall 0.72 in top decile; expected 12% reduction in collection costs.
-            </p>
-          </article>
-
-          <article class="card">
-            <header>
-              <h3>Rental Price Prediction — São Paulo</h3>
-              <a class="pill btn-link" href="https://github.com/YOUR_REPO_RENT" target="_blank">GitHub</a>
-            </header>
-            <p>
-              <strong>Problem:</strong> Estimate rental prices in São Paulo.<br/>
-              <strong>Approach:</strong> Log-transform (<code>log_rent</code>), VIF, model assumptions validation, regression and tree models.<br/>
-              <strong>Result:</strong> R² = 0.85; RMSE = R$120 (~3% of true value).
-            </p>
-          </article>
-
-          <article class="card">
-            <header>
-              <h3>Wine Quality Classification</h3>
-              <a class="pill btn-link" href="https://github.com/YOUR_REPO_WINE" target="_blank">GitHub</a>
-            </header>
-            <p>
-              <strong>Problem:</strong> Classify wine quality based on physicochemical features.<br/>
-              <strong>Approach:</strong> Pipelines with cross-validation, hyperparameter tuning, class-level metrics, SHAP explainability, MLflow tracking.<br/>
-              <strong>Result:</strong> F1-macro = 0.71; full reproducibility ensured.
-            </p>
-          </article>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section" data-aos="fade-up">
+      <h2>Featured Projects</h2>
+      <p class="section-description">Explore my latest work in data science, mathematics, and programming</p>
+      <div class="projects-grid">
+        <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="project-icon">
+            <i class="fas fa-project-diagram"></i>
+          </div>
+          <h3>Project Coming Soon</h3>
+          <p>Exciting projects in machine learning and data analysis will be featured here soon.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>ML</span>
+          </div>
+          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="project-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3>Project Coming Soon</h3>
+          <p>Deep learning applications and neural network implementations.</p>
+          <div class="project-tags">
+            <span>Deep Learning</span>
+            <span>TensorFlow</span>
+          </div>
+          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="project-icon">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <h3>Project Coming Soon</h3>
+          <p>Mathematical modeling and theoretical research applications.</p>
+          <div class="project-tags">
+            <span>Mathematics</span>
+            <span>Research</span>
+          </div>
+          <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATIONS (black, same background as projects) -->
-    <section id="certs" class="section bg-ink">
-      <div class="container narrow">
-        <h2>Certifications</h2>
-        <ul class="cert-list">
-          <li>ISLP (Introduction to Statistical Learning with Python) — ongoing</li>
-          <li>Hands-On Machine Learning (A. Géron) — practice track</li>
-          <li>Python for Data Analysis (W. McKinney) — project-focused</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CONTACT (purple) -->
-    <section id="contact" class="section bg-purple">
-      <div class="container narrow">
-        <h2>Contact</h2>
-        <p>Use the form below — messages go directly to my inbox.</p>
-
-        <form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST" class="contact-form">
-          <label>Name
-            <input name="name" type="text" required>
-          </label>
-          <label>Email
-            <input name="_replyto" type="email" required>
-          </label>
-          <label>Message
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button class="btn btn-primary" type="submit">Send</button>
-        </form>
-
-        <div class="links-inline">
-          <a href="https://github.com/ric-rky" target="_blank">GitHub</a>
-          <span>•</span>
-          <a href="https://www.linkedin.com/in/ricardo-bertolucci/" target="_blank">LinkedIn</a>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section" data-aos="fade-up">
+      <h2>Let's Connect</h2>
+      <p class="section-description">Feel free to reach out for collaborations or just to say hi!</p>
+      <div class="contact-links">
+        <a href="https://github.com/ric-rky" target="_blank" class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+          <p>@ric-rky</p>
+        </a>
+        <a href="https://www.linkedin.com/in/ricardo-luís-bertolucci-filho/" target="_blank" class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <p>Ricardo Luís Bertolucci Filho</p>
+        </a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <small>© 2025 Ricardo Luís Bertolucci Filho. Data Science • Machine Learning • Innovation.</small>
-    </div>
+  <footer>
+    <p>&copy; 2025 Ricardo Luís Bertolucci Filho. All rights reserved.</p>
+    <p class="footer-tagline">Mathematics • Data Science • Innovation</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
 </html>
