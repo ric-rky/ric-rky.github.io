@@ -1,37 +1,446 @@
-/** Updated styles for the website */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  --bg-primary: #1a0933;
+  --bg-secondary: #2d1150;
+  --bg-card: #3d1870;
+  --accent-primary: #a855f7;
+  --accent-secondary: #c084fc;
+  --accent-gradient: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
+  --text-primary: #f8fafc;
+  --text-secondary: #e0e7ff;
+  --text-muted: #c4b5fd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background: linear-gradient(to bottom, #4c1d95, #5b21b6, #6d28d9);
-    transition: background 0.5s ease;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #1a0933 0%, #0f0520 30%, #000000 70%);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
-section.about {
-    background-color: rgba(76, 29, 149, 0.8); /* Darkening effect */
+/* Hero Section - Roxo Forte */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #4c1d95 0%, #5b21b6 50%, #6d28d9 100%);
+  overflow: hidden;
 }
 
-section.skills {
-    background-color: rgba(50, 0, 50, 0.9); /* Darker background */
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(168,85,247,0.3) 0%, transparent 70%);
+  animation: pulse 8s ease-in-out infinite;
 }
 
-section.projects {
-    background-color: #000000; /* Black background */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.1); opacity: 0.8; }
 }
 
-section.contact {
-    background-color: #1a1a1a; /* Very dark */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  backdrop-filter: blur(0px);
 }
 
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #e0e7ff;
+  margin-bottom: 35px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 35px;
+  background: var(--accent-gradient);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(168,85,247,0.4);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(168,85,247,0.6);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.scroll-indicator a {
+  color: #e0e7ff;
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+section {
+  margin: 100px 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-description {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* About Section - Começando a escurecer */
+.about-section {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+.about-content p {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto 25px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.about-content strong {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.skill-category {
+  background: rgba(61, 24, 112, 0.4);
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(168,85,247,0.3);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(168,85,247,0.3);
+  background: rgba(61, 24, 112, 0.6);
+}
+
+.skill-category h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: var(--accent-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: rgba(45, 17, 80, 0.6);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(168,85,247,0.3);
+}
+
+.skills span:hover {
+  background: var(--accent-gradient);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(168,85,247,0.4);
+  border-color: transparent;
+}
+
+/* Projects Section - Mais escuro */
+.projects-section {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(20, 20, 20, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(168,85,247,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent-gradient);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(168,85,247,0.3);
+  border-color: var(--accent-primary);
+  background: rgba(30, 30, 30, 0.9);
+}
+
+.project-icon {
+  font-size: 2.5rem;
+  color: var(--accent-primary);
+  margin-bottom: 20px;
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.project-card p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.project-tags span {
+  background: rgba(45, 17, 80, 0.6);
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--accent-secondary);
+  transform: translateX(5px);
+}
+
+.project-link i {
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover i {
+  transform: translateX(5px);
+}
+
+/* Contact Section - Preto */
+.contact-section {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(168,85,247,0.2);
+  min-width: 200px;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(168,85,247,0.3);
+  border-color: var(--accent-primary);
+  background: rgba(30, 30, 30, 1);
+}
+
+.contact-card i {
+  font-size: 3rem;
+  color: var(--accent-primary);
+  margin-bottom: 15px;
+}
+
+.contact-card h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  color: var(--text-secondary);
+}
+
+/* Footer - Totalmente Preto */
 footer {
-    background-color: #000000; /* Completely black */
+  background: #000000;
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(168,85,247,0.2);
 }
 
-/* Accent colors */
-a {
-    color: #a855f7; /* Purple accent color */
+.footer-tagline {
+  margin-top: 10px;
+  font-style: italic;
+  color: var(--text-muted);
 }
 
-button {
-    background-color: #c084fc; /* Purple accent color */
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  section {
+    margin: 60px 0;
+  }
 
-/* Additional styling as needed */
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
