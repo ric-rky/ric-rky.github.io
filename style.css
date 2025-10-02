@@ -158,7 +158,7 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* About Section - Começando a escurecer */
+/* About Section */
 .about-section {
   background: rgba(0, 0, 0, 0.3);
   padding: 60px 20px;
@@ -234,242 +234,9 @@ h2 {
   color: #ffffff;
 }
 
-/* Languages Section */
-.languages-section {
-  background: rgba(0, 0, 0, 0.35);
-  padding: 60px 20px;
-  border-radius: 20px;
-}
-
-.languages-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.language-card {
-  background: rgba(107, 22, 87, 0.25);
-  padding: 30px;
-  border-radius: 20px;
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(139,24,116,0.3);
-}
-
-.language-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(139,24,116,0.3);
-  background: rgba(107, 22, 87, 0.4);
-}
-
-.language-icon {
-  font-size: 3rem;
-  color: #b83b95;
-  margin-bottom: 15px;
-}
-
-.language-card h3 {
-  font-size: 1.3rem;
-  color: #f5f5f5;
-  margin-bottom: 15px;
-}
-
-.proficiency-bar {
-  width: 100%;
-  height: 8px;
-  background: rgba(0,0,0,0.3);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.proficiency-fill {
-  height: 100%;
-  background: var(--accent-gradient);
-  border-radius: 10px;
-  transition: width 0.5s ease;
-}
-
-.proficiency-fill.native {
-  width: 100%;
-}
-
-.proficiency-fill.fluent {
-  width: 95%;
-}
-
-.proficiency-fill.advanced {
-  width: 80%;
-}
-
-.proficiency-fill.intermediate {
-  width: 60%;
-}
-
-.proficiency-label {
-  font-size: 0.9rem;
-  color: #c9a5c5;
-  font-weight: 500;
-}
-
-/* Courses Section */
-.courses-section {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 60px 20px;
-  border-radius: 20px;
-}
-
-.courses-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
-
-.course-card {
-  background: rgba(20, 20, 20, 0.7);
-  padding: 25px;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(139,24,116,0.2);
-  border-left: 4px solid #b83b95;
-}
-
-.course-card:hover {
-  transform: translateX(5px);
-  box-shadow: 0 10px 30px rgba(139,24,116,0.3);
-  background: rgba(30, 30, 30, 0.8);
-}
-
-.course-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 15px;
-}
-
-.course-header i {
-  font-size: 2rem;
-  color: #b83b95;
-}
-
-.course-header h3 {
-  font-size: 1.2rem;
-  color: #f5f5f5;
-  margin: 0;
-}
-
-.course-institution {
-  color: #c9a5c5;
-  font-size: 1rem;
-  margin-bottom: 5px;
-  font-weight: 500;
-}
-
-.course-date {
-  color: #9a7a96;
-  font-size: 0.9rem;
-  margin-bottom: 15px;
-}
-
-.course-tags {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.course-tags span {
-  background: rgba(139, 24, 116, 0.3);
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  color: #c9a5c5;
-  border: 1px solid rgba(139,24,116,0.3);
-}
-
-/* Books Section */
-.books-section {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 60px 20px;
-  border-radius: 20px;
-}
-
-.books-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.book-card {
-  background: rgba(20, 20, 20, 0.8);
-  padding: 30px;
-  border-radius: 20px;
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(139,24,116,0.2);
-}
-
-.book-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 40px rgba(139,24,116,0.3);
-  border-color: #b83b95;
-}
-
-.book-icon {
-  font-size: 3.5rem;
-  color: #b83b95;
-  margin-bottom: 20px;
-}
-
-.book-card h3 {
-  font-size: 1.3rem;
-  color: #f5f5f5;
-  margin-bottom: 10px;
-}
-
-.book-author {
-  color: #c9a5c5;
-  font-size: 0.95rem;
-  margin-bottom: 8px;
-  font-style: italic;
-}
-
-.book-topic {
-  color: #9a7a96;
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-}
-
-.book-progress {
-  margin-top: 15px;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 6px;
-  background: rgba(0,0,0,0.4);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 8px;
-}
-
-.progress-fill {
-  height: 100%;
-  background: var(--accent-gradient);
-  border-radius: 10px;
-  transition: width 0.8s ease;
-}
-
-.progress-text {
-  font-size: 0.85rem;
-  color: #c9a5c5;
-  font-weight: 500;
-}
-
-/* Projects Section - Mais escuro */
+/* Projects Section */
 .projects-section {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   padding: 60px 20px;
   border-radius: 20px;
 }
@@ -570,7 +337,68 @@ h2 {
   transform: translateX(5px);
 }
 
-/* Contact Section - Preto */
+/* Learning & Certifications Section */
+.learning-section {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 60px 20px;
+  border-radius: 20px;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.learning-item {
+  background: rgba(107, 22, 87, 0.2);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(139,24,116,0.25);
+}
+
+.learning-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(139,24,116,0.3);
+  background: rgba(107, 22, 87, 0.35);
+  border-color: rgba(139,24,116,0.4);
+}
+
+.learning-icon {
+  font-size: 2.5rem;
+  color: #b83b95;
+  margin-bottom: 20px;
+}
+
+.learning-item h3 {
+  font-size: 1.3rem;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.learning-item p {
+  color: #c9a5c5;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.learning-item p strong {
+  color: #b83b95;
+  font-weight: 600;
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: #9a7a96;
+  font-style: italic;
+}
+
+/* Contact Section */
 .contact-section {
   background: rgba(0, 0, 0, 0.7);
   padding: 60px 20px;
@@ -618,7 +446,7 @@ h2 {
   color: #c9a5c5;
 }
 
-/* Footer - Totalmente Preto */
+/* Footer */
 footer {
   background: #000000;
   text-align: center;
@@ -660,15 +488,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .languages-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .courses-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .books-grid {
+  .learning-grid {
     grid-template-columns: 1fr;
   }
   
