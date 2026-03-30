@@ -51,7 +51,7 @@
     <div class="hero-content" data-aos="zoom-in">
       <h1>Ricardo Luís Bertolucci Filho</h1>
       <h2>Mathematician | Data Scientist</h2>
-      <p class="subtitle">Data Science • Machine Learning • Mathematics</p>
+      <p class="subtitle">Data Science • Machine Learning • AI • Mathematics</p>
       <div class="hero-buttons">
         <a href="#projects" class="btn btn-primary" aria-label="Explore my work">Explore My Work</a>
         <a href="#contact" class="btn btn-secondary" aria-label="Get in touch">Get in Touch</a>
@@ -75,14 +75,14 @@
         <p>
           This portfolio showcases my featured projects and explores the intersection of
           <strong>mathematics</strong>, <strong>data science</strong>, and <strong>programming</strong>.
-          I’m passionate about solving complex problems with principled modeling and modern machine learning techniques.
+          I'm passionate about solving complex problems with principled modeling, modern machine learning techniques, and AI-powered applications.
         </p>
       </div>
     </section>
 
     <!-- Skills Section -->
     <section class="skills-section" data-aos="fade-up">
-      <h2>Skills & Expertise</h2>
+      <h2>Skills &amp; Expertise</h2>
       <div class="skills-grid">
         <div class="skill-category" data-aos="fade-right">
           <h3><i class="fas fa-code" aria-hidden="true"></i> Programming</h3>
@@ -115,6 +115,17 @@
             <span>Optimization</span>
           </div>
         </div>
+        <div class="skill-category" data-aos="fade-up">
+          <h3><i class="fas fa-robot" aria-hidden="true"></i> AI &amp; LLMs</h3>
+          <div class="skills">
+            <span>LangChain</span>
+            <span>LangGraph</span>
+            <span>RAG</span>
+            <span>LLM Fine-tuning</span>
+            <span>Prompt Engineering</span>
+            <span>AI Agents</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -126,51 +137,51 @@
       <div class="projects-grid">
         <!-- Project 1 -->
         <div class="project-card" data-aos="flip-left" data-aos-delay="100">
-          <div class="project-icon"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
-          <h3>Churn Prediction for Education Payments</h3>
+          <div class="project-icon"><i class="fas fa-heartbeat" aria-hidden="true"></i></div>
+          <h3>Heart Disease Predictor</h3>
           <p>
-            <strong>Problem:</strong> estimate likelihood of payment after collection actions.<br/>
-            <strong>Approach:</strong> action-level dataset, temporal features, Logistic Regression → XGBoost, temporal validation, SHAP explainability.<br/>
-            <strong>Result:</strong> <span class="metrics-badge">AUC 0.81</span> <span class="metrics-badge">Recall@Top 0.72</span> ~12% expected cost reduction.
+            <strong>Problem:</strong> estimate probability of heart disease from 13 routine clinical variables.<br/>
+            <strong>Approach:</strong> MLP with BatchNorm + Dropout (PyTorch), SHAP explainability, FastAPI backend, Streamlit interface, Docker.<br/>
+            <strong>Result:</strong> <span class="metrics-badge">AUC-ROC ~0.92</span> <span class="metrics-badge">Accuracy ~0.85</span> <span class="metrics-badge">Recall ~0.87</span>
           </p>
           <div class="project-tags">
-            <span>Python</span><span>scikit-learn</span><span>SHAP</span>
+            <span>PyTorch</span><span>FastAPI</span><span>Streamlit</span><span>SHAP</span><span>Docker</span>
           </div>
-          <a href="https://github.com/YOUR_REPO_CHURN" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Churn project on GitHub">
+          <a href="https://github.com/ric-rky/heart-disease-predictor" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Heart Disease Predictor on GitHub">
             View on GitHub <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
         </div>
 
         <!-- Project 2 -->
         <div class="project-card" data-aos="flip-left" data-aos-delay="200">
-          <div class="project-icon"><i class="fas fa-city" aria-hidden="true"></i></div>
-          <h3>Rental Price Prediction — São Paulo</h3>
+          <div class="project-icon"><i class="fas fa-sliders-h" aria-hidden="true"></i></div>
+          <h3>Interactive ML Playground</h3>
           <p>
-            <strong>Problem:</strong> rental price estimation in São Paulo.<br/>
-            <strong>Approach:</strong> log-transform (<code>log_rent</code>), VIF, model assumptions validation; linear + tree models.<br/>
-            <strong>Result:</strong> <span class="metrics-badge">R² 0.85</span> <span class="metrics-badge">RMSE ≈ R$120</span> (~3% of price).
+            <strong>Problem:</strong> make ML model behavior intuitive and visually explorable.<br/>
+            <strong>Approach:</strong> interactive Streamlit app with 7 classifiers (KNN, SVM, Decision Tree, Random Forest, Gradient Boosting, MLP, PyTorch), decision boundaries, confidence maps, learning curves, and architecture diagrams in real time.<br/>
+            <strong>Result:</strong> <span class="metrics-badge">7 algorithms</span> <span class="metrics-badge">8 datasets</span> full metrics dashboard.
           </p>
           <div class="project-tags">
-            <span>Pandas</span><span>Statsmodels</span><span>Regression</span>
+            <span>Streamlit</span><span>scikit-learn</span><span>PyTorch</span><span>Plotly</span>
           </div>
-          <a href="https://github.com/YOUR_REPO_RENT" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Rental Price project on GitHub">
+          <a href="https://github.com/ric-rky/interactive_ml_playground" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Interactive ML Playground on GitHub">
             View on GitHub <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
         </div>
 
         <!-- Project 3 -->
         <div class="project-card" data-aos="flip-left" data-aos-delay="300">
-          <div class="project-icon"><i class="fas fa-wine-bottle" aria-hidden="true"></i></div>
-          <h3>Wine Quality Classification</h3>
+          <div class="project-icon"><i class="fas fa-chart-bar" aria-hidden="true"></i></div>
+          <h3>Finance Data Science Project</h3>
           <p>
-            <strong>Problem:</strong> quality classification from physicochemical features.<br/>
-            <strong>Approach:</strong> pipelines with cross-validation, hyperparameter tuning, class-level metrics, SHAP; MLflow tracking.<br/>
-            <strong>Result:</strong> <span class="metrics-badge">F1-macro 0.71</span> full reproducibility with MLflow.
+            <strong>Problem:</strong> end-to-end quantitative finance analysis on daily OHLCV stock data.<br/>
+            <strong>Approach:</strong> LSTM forecasting, feedforward NN for direction classification, autoencoder anomaly detection, Monte Carlo simulation, SHAP, Value at Risk.<br/>
+            <strong>Result:</strong> <span class="metrics-badge">LSTM MAE 2.86 USD</span> <span class="metrics-badge">VaR 2.73%</span> <span class="metrics-badge">25 anomalies flagged</span>
           </p>
           <div class="project-tags">
-            <span>Python</span><span>MLflow</span><span>Classification</span>
+            <span>PyTorch</span><span>LSTM</span><span>SHAP</span><span>Monte Carlo</span>
           </div>
-          <a href="https://github.com/YOUR_REPO_WINE" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Wine Quality project on GitHub">
+          <a href="https://github.com/ric-rky/finance_ds_project" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Open Finance DS Project on GitHub">
             View on GitHub <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
         </div>
@@ -179,7 +190,7 @@
 
     <!-- Learning & Certifications Section -->
     <section id="learning" class="learning-section" data-aos="fade-up">
-      <h2>Learning & Certifications</h2>
+      <h2>Learning &amp; Certifications</h2>
       <div class="learning-grid">
         <div class="learning-item" data-aos="fade-right">
           <div class="learning-icon"><i class="fas fa-language" aria-hidden="true"></i></div>
@@ -227,7 +238,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Ricardo Luís Bertolucci Filho. All rights reserved.</p>
+    <p>&copy; 2026 Ricardo Luís Bertolucci Filho. All rights reserved.</p>
     <p class="footer-tagline">Data Science, Mathematics and Innovation.</p>
   </footer>
 
