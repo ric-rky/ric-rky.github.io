@@ -8,27 +8,22 @@
   <meta name="description" content="Portfolio of Ricardo Luís Bertolucci Filho: projects in Data Science, Machine Learning, and Applied Mathematics." />
   <link rel="canonical" href="https://ric-rky.github.io/" />
 
-  <!-- Performance: fonts preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-  <!-- Social preview -->
   <meta property="og:title" content="Ricardo Luís Bertolucci Filho — Portfolio" />
   <meta property="og:description" content="Projects in ML, Applied Statistics, and Mathematics." />
   <meta property="og:url" content="https://ric-rky.github.io/" />
   <meta property="og:type" content="website" />
-  <!-- <meta property="og:image" content="https://ric-rky.github.io/og.png" /> -->
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Ricardo Luís Bertolucci Filho — Portfolio" />
   <meta name="twitter:description" content="Projects in ML, Applied Statistics, and Mathematics." />
 
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -70,12 +65,21 @@
         <p>
           I hold a <strong>Master's degree in Mathematics</strong> with a specialization in
           <strong>Functional Analysis and Operator Theory</strong>. Currently working as a
-          <strong>Data Scientist</strong>, combining rigorous mathematical theory with practical data-driven solutions.
+          <strong>Data Scientist</strong>, combining rigorous mathematical foundations with
+          practical data-driven solutions and modern AI systems.
         </p>
         <p>
-          This portfolio showcases my featured projects and explores the intersection of
-          <strong>mathematics</strong>, <strong>data science</strong>, and <strong>programming</strong>.
-          I'm passionate about solving complex problems with principled modeling, modern machine learning techniques, and AI-powered applications.
+          My work sits at the intersection of <strong>machine learning</strong>, <strong>AI engineering</strong>,
+          and <strong>applied mathematics</strong>. I design and build intelligent systems that go beyond
+          traditional ML pipelines — including <strong>LLM-powered applications</strong>,
+          <strong>multi-agent architectures</strong> with LangGraph, and <strong>RAG systems</strong>
+          that combine retrieval and generation to deliver context-aware, reliable outputs.
+        </p>
+        <p>
+          I believe that the mathematical rigor behind optimization, linear algebra, and probability
+          theory is what gives AI systems their interpretability and robustness. That perspective
+          shapes how I approach every problem — from fine-tuning language models to designing
+          stateful <strong>AI agents</strong> that reason, plan, and act autonomously.
         </p>
       </div>
     </section>
@@ -188,9 +192,9 @@
       </div>
     </section>
 
-    <!-- Learning & Certifications Section -->
+    <!-- Currently Section -->
     <section id="learning" class="learning-section" data-aos="fade-up">
-      <h2>Learning &amp; Certifications</h2>
+      <h2>Currently</h2>
       <div class="learning-grid">
         <div class="learning-item" data-aos="fade-right">
           <div class="learning-icon"><i class="fas fa-language" aria-hidden="true"></i></div>
@@ -199,16 +203,18 @@
           <p><strong>Portuguese:</strong> Native</p>
         </div>
         <div class="learning-item" data-aos="fade-up">
-          <div class="learning-icon"><i class="fas fa-certificate" aria-hidden="true"></i></div>
-          <h3>Certifications</h3>
-          <p>Google Data Analytics</p>
-          <p>AWS Cloud Practitioner</p>
+          <div class="learning-icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+          <h3>Studying</h3>
+          <p>LLMs from Scratch — Sebastian Raschka</p>
+          <p>Designing Machine Learning Systems — Chip Huyen</p>
+          <p>AI Engineering — Chip Huyen</p>
         </div>
         <div class="learning-item" data-aos="fade-left">
-          <div class="learning-icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
-          <h3>Currently Studying</h3>
-          <p>Hands-On Machine Learning (Aurélien Géron)</p>
-          <p>An Introduction to Statistical Learning (ISLR/ISLP)</p>
+          <div class="learning-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+          <h3>Exploring</h3>
+          <p>Multi-agent systems with LangGraph</p>
+          <p>Retrieval-Augmented Generation (RAG) pipelines</p>
+          <p>LLM evaluation &amp; observability</p>
         </div>
       </div>
     </section>
@@ -244,7 +250,6 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // Respect users who prefer reduced motion
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     AOS.init({
       duration: prefersReduced ? 0 : 1000,
