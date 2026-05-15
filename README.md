@@ -2,7 +2,7 @@
 
 ## Mathematician | Data Scientist | AI Engineer
 
-🌐 https://ric-rky.github.io/
+🌐 https://bertolucci-rl.github.io/
 
 ---
 
